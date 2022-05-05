@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    height: 100vh;
+    margin: 0 auto;
+}
+header {
+    background-color: #1f2937;
+}
+
+/* NAV BAR */
+.nav-bar {
+    display: flex;
+    padding: 4rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90vw;
+}
+.logo p{
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Satisfy', cursive;
+}
+
+.list-items {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.pages a{
+    text-decoration: none;
+    color: #fff;
+}
+.pages a:hover {
+    background-color: #3882f6;
+    transition: 0.5s;
+    padding: 1rem;
+    color: #fff;
+}
+.pages {
+    color: #fff;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+/* MAIN TAB */
+.contact-main {
+    background-color: #acc6f0;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.contact-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3rem;
+    padding: 4rem 0;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    text-align: center;
+}
+.address-details {
+    width: 20%;
+}
+
+.fa-solid {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    color: #1f2937;
+}
+
+.second-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 70vw;
+}
+.tab-1 {
+    background-color: #1f2937;
+    width: 30rem;
+    padding: 2.7rem;
+    color: #fff;
+}
+
+.hello-request {
+    margin-bottom: 17rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.open {
+    font-size: 2rem;
+    font-weight: 900;
+    padding-bottom: 2.2rem;
+}
+
+.days, .time, .saturdays, .sundays {
+    font-size: 1.3rem;
+    padding-bottom: 0.6rem;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    width: 50vw;
+    padding: 3rem;
+}
+
+.name-area {
+    display: flex;
+    column-gap: 2rem;
+}
+
+input {
+    height: 4rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    border: 1px solid #3882f6;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 1.4rem;
+    padding-left: 2rem;
+    border-bottom-width: 2px;
+    transition: all 0.6s ease;
+}
+
+input:focus,
+input:valid {
+    border-color: #3882f6;
+}
+textarea {
+    width: 100%;
+    margin-bottom: 2rem;
+    border: 1px solid #1f2937;
+    border-radius: 5px;
+    /* text-align: left; */
+    font-size: 1.6rem;
+    padding-left: 2rem;
+    border-bottom-width: 2px;
+    transition: all 0.6s ease;
+}
+textarea:focus,
+textarea:valid {
+    border-color: #3882f6;
+}
+
+.submit {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.submit:hover {
+    background-color: #3882f6;
+}
