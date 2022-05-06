@@ -95,7 +95,7 @@ header {
     font-size: 1.5rem;
     font-weight: 400;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 .header-cta:hover {
     background-color: #1f2937;
@@ -305,12 +305,16 @@ header {
     text-decoration: none;
     color: rgb(15, 177, 10);
 }
+.request-quote a:hover {
+    color: #fff;
+}
 /* FOOTER */
 footer {
     background-color: #1f2937;
     padding: 3rem 0;
     margin: 0 auto;
     text-align: center;
+    border-top: 1.4px solid #fff;
 }
 .copyright {
     font-weight: 200;
@@ -561,6 +565,7 @@ footer {
     .hero-text {
         max-width: 70vw;
     }
+
     .main-text {
         font-size: 3rem;
         font-weight: 700;
@@ -578,6 +583,7 @@ footer {
     .header-img {
         width: 300px;
         border: 10px solid #fff;
+        margin: 0 auto;
     }
     /* SERVICES AREA */
     .services {

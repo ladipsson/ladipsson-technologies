@@ -214,6 +214,22 @@ header {
     text-decoration: none;
     color: rgb(15, 177, 10);
 }
+.request-quote a:hover {
+    color: #fff;
+}
+/* FOOTER */
+footer {
+    background-color: #1f2937;
+    padding: 3rem 0;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1.4px solid #fff;
+}
+.copyright {
+    font-weight: 200;
+    font-size: 1.1rem;
+    color: #fff;
+}
 
 /* MEDIA QUERIES */
 
