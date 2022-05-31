@@ -11,35 +11,42 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Satisfy&family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- FONT AWSOME ICONS -->
-    <script
-      src="https://kit.fontawesome.com/799f5e50bc.js"
-      crossorigin="anonymous"
-    ></script>
 
     <!-- CSS STYLE LINK     -->
     <link rel="stylesheet" href="CSS/styles.css" />
+
+    <!-- FONT AWSOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+
     <title>Ladipsson Technologies</title>
   </head>
   <body>
-    <header>
-      <nav class="nav-bar">
+    <header class="">
+      <nav class="menu-bar">
         <div class="logo">
-          <p>
-            Ladipsson <br />
-            Technologies
-          </p>
+          <a href="index.html"><span class="first-letter">La</span>dipsson <br />
+            Technologies</a>
         </div>
-        <div class="nav-list">
-          <ul class="list-items">
-            <li class="pages"><a href="index.html">Home</a></li>
-            <li class="pages"><a href="about.html">About Us</a></li>
-            <li class="pages"><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
 
-      <!-- HERO TAB -->
+        <div class="nav_menu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <ul class="header_menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="open-btn-menu"><i class="fa-solid fa-bars"></i></button>
+        <button id="close-btn-menu"><i class="fa-solid fa-xmark"></i></button>
+        
+      </nav>
+    </header>
+
+    <!-- HERO TAB -->
       <div class="hero-tab">
         <div class="hero-text">
           <h1 class="main-text">Top Notch Web Development Company</h1>
@@ -60,9 +67,7 @@
         <p class="service-head">What We Do</p>
         <div class="service-details">
           <div class="my-service">
-            <div class="ui-img">
               <img src="images/ui-design.jpg" alt="" class="services-img" />
-            </div>
             <div class="desc">
               <h2 class="desc-heading">UI/UX Design</h2>
               <p class="desc-text">
@@ -72,9 +77,7 @@
             </div>
           </div>
           <div class="my-service">
-            <div class="frontend-img">
               <img src="images/front-end.jpg" alt="" class="services-img" />
-            </div>
             <div class="desc">
               <h2 class="desc-heading">Frontend Development</h2>
               <p class="desc-text">
@@ -83,9 +86,7 @@
             </div>
           </div>
           <div class="my-service">
-            <div class="database-img">
               <img src="images/database.png" alt="" class="services-img" />
-            </div>
             <div class="desc">
               <h2 class="desc-heading">Database Management</h2>
               <p class="desc-text">
@@ -95,9 +96,7 @@
             </div>
           </div>
           <div class="my-service">
-            <div class="seo-img">
               <img src="images/figma-design.jpg" alt="" class="services-img" />
-            </div>
             <div class="desc">
               <h2 class="desc-heading">Search Engine Optimization</h2>
               <p class="desc-text">
@@ -108,8 +107,8 @@
         </div>
       </div>
 
-      <!-- TESTIMONIALS -->
-      <div class="testimonials">
+    <!-- TESTIMONIALS -->
+    <div class="testimonials">
         <div class="content">
           <p class="quote">
             We love what we do and we do what our clients love & work with great
@@ -120,8 +119,8 @@
         </div>
       </div>
 
-      <!-- CTA SECTION  -->
-      <div class="main-cta">
+    <!-- CTA SECTION  -->
+    <div class="main-cta">
         <div class="inner-cta">
           <div class="cta-texts">
             <p class="main-ctatext">
@@ -138,16 +137,16 @@
         </div>
       </div>
 
-      <!-- FOOTER -->
     </main>
+    
     <!-- QUICK LINKS - FOOTER AREA -->
     <div class="quick-links">
       <div class="office-details">
         <h3 class="office-details-head">Our Office</h3>
-        <p>78, Church Street, Magodo-isheri, Lagos State</p>
-        <p>info@ladipssontechnologies.com</p>
-        <p>+234-906-8253382</p>
-        <p>+234-811-2830281</p>
+        <p> <span style="padding-right: 0.4rem;"><i class="fa-solid fa-location-dot"></i></span> 78, Church Street, Magodo-isheri, Lagos State</p>
+        <p> <span style="padding-right: 0.4rem;"><i class="fa-solid fa-envelope"></i></span>info@ladipssontechnologies.com</p>
+        <p> <span style="padding-right: 0.4rem;"><i class="fa-solid fa-location-dot"></i></span>+234-906-8253382</p>
+        <p> <span style="padding-right: 0.4rem;"><i class="fa-solid fa-location-dot"></i></span>+234-811-2830281</p>
       </div>
 
       <div class="company-details">
@@ -188,5 +187,7 @@
     <footer>
       <p class="copyright">Copyright @ Ladipsson 2022</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
