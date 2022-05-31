@@ -23,7 +23,7 @@
     @include breakpoint(ipad) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      width: $large;
+      width: $small;
       column-gap: 1.8rem;
     }
     @include breakpoint(laptop) {
@@ -53,9 +53,11 @@
         .desc-text {
           font-size: 0.8rem;
           padding-bottom: 1rem;
+          width: 70%;
+          margin: 0 auto;
 
           @include breakpoint(ipad) {
-            width: 60%;
+            width: 85%;
             margin: 0 auto;
           }
         }

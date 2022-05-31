@@ -46,10 +46,10 @@ header {
           font-size: 1.2rem;
           color: $secondColor;
           transition: 300ms ease-in;
-          padding: 1.2rem;
+          padding: 1rem;
+
           &:hover {
-            background-color: $primary;
-            color: $lightGreen;
+            background-color: $lightGreen;
           }
           
         }
