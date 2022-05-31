@@ -1,0 +1,63 @@
+@mixin breakpoint($port) {
+  @if $port == large-phone {
+    @media screen and (min-width: 600px) {
+      @content;
+    }
+  } @else if $port == ipad {
+    @media screen and (min-width: 730px) {
+      @content;
+    }
+  } @else if $port == ipad-pro {
+    @media screen and (min-width: 920px) {
+      @content;
+    }
+  } @else if $port == ipad-promax {
+    @media screen and (min-width: 1060px) {
+      @content;
+    }
+  } @else if $port == laptop {
+    @media screen and (min-width: 1279px) {
+      @content;
+    }
+  }
+}
+
+// @mixin breakpoind-down($ports) {
+//   @if $ports == ipad-promax-down {
+//     @media screen and (max-width: 1060px) {
+//       @content;
+//     }
+//   }
+// }
+
+// Breakpoints
+// @media (min-width: 64em) {
+//   // styles go here
+// }
+
+// // 600px, 810px, 1024px
+// $breakpoints-up: (
+//   "large-phone": "37.5em",
+//   "ipad": "50.625em",
+//   "ipad-pro": "64em",
+// );
+
+// // 599px, 809px, 1023px
+// $breakpoints-down: (
+//   "large-phone": "37.4375em",
+//   "ipad": "50.5625em",
+//   "ipad-pro": "63.9375em",
+//   "large": "79.875em"
+// );
+
+// @mixin breakpoint-up($size) {
+//   @media (min-width: map-get($breakpoints-up, $size)) {
+//     @content;
+//   }
+// }
+
+// @mixin breakpoint-down($size) {
+//   @media (max-width: map-get($breakpoints-down, $size)) {
+//     @content;
+//   }
+// }

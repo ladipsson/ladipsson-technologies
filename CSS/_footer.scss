@@ -1,0 +1,121 @@
+/* QUICK LINKS - FOOTER AREA */
+
+.quick-links {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: 1fr;
+  padding: 2rem 3rem;
+  margin: 0 auto;
+  background-color: #1f2937;
+  color: #fff;
+  text-align: center;
+
+  @include breakpoint(ipad) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include breakpoint(laptop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .office-details {
+    padding-bottom: 1.2rem;
+    
+    .office-details-head {
+      display: inline-block;
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 2.5;
+    }
+    p {
+      font-size: 0.8rem;
+      opacity: 70%;
+      padding-bottom: 0.4rem;
+    }
+  }
+
+  .company-details {
+    padding-bottom: 1.2rem;
+    .company-details-head {
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 2.5;
+    }
+    ul {
+      list-style: none;
+    }
+    .company-quicklinks a {
+      font-size: 0.8rem;
+      line-height: 1.5;
+      opacity: 70%;
+      color: #fff;
+      text-decoration: none;
+      transition: all 300ms ease-in;
+    }
+    a:hover {
+      color: $lightGreen;
+      text-decoration: underline;
+    }
+  }
+
+  .whatwedo {
+    padding-bottom: 1.2rem;
+    .services-head {
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 2.5;
+    }
+    ul {
+      list-style: none;
+    }
+    .services-list a {
+      font-size: 0.8rem;
+      line-height: 1.5;
+      opacity: 70%;
+      color: #fff;
+      text-decoration: none;
+      transition: all 300ms ease-in;
+    }
+    a:hover {
+      color: $lightGreen;
+      text-decoration: underline;
+    }
+  }
+
+  .lets-discuss {
+    .discus-head {
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 2.5;
+    }
+    .discuss-main-text {
+      font-size: 0.8rem;
+      line-height: 1.5;
+      opacity: 70%;
+    }
+
+    .request-quote {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding-top: 3rem;
+    }
+    .request-quote a {
+      color: $lightGreen;
+      transition: all 200ms ease-in;
+    }
+    a:hover {
+      color: #fff;
+    }
+  }
+}
+
+.copyright {
+    text-align: center;
+    background-color: $secondColor;
+    font-size: 0.7rem;
+    padding: 1rem 0;
+    @include breakpoint(laptop) {
+      width: 100vw;
+    }
+}

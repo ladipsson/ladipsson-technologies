@@ -1,0 +1,151 @@
+@import "_mixins";
+
+header {
+  background-color: $primary;
+
+  .menu-bar {
+    background-color: $lightBlue;
+    display: flex;
+    padding: 2rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @include breakpoint(ipad) {
+      padding: 2rem 4rem;
+    }
+    @include breakpoint(laptop) {
+      width: 100vw;
+    }
+
+    .logo {
+      a {
+        font-size: 1.3rem;
+        color: $secondColor;
+        font-family: $logoFont;
+        font-weight: 600;
+        span {
+          color: $primary;
+        }
+        @include breakpoint(ipad) {
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    .nav_menu {
+      display: none;
+
+      @include breakpoint(laptop) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100vw;
+        
+        a {
+          font-size: 1.2rem;
+          color: $secondColor;
+          transition: 300ms ease-in;
+          padding: 1.2rem;
+          &:hover {
+            background-color: $primary;
+            color: $lightGreen;
+          }
+          
+        }
+      }
+    } 
+    
+
+    .header_menu {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      right: 8%;
+      top: 8.125rem;
+      background-color: $primary;
+      height: fit-content;
+      width: 50%;
+      transition: 400ms ease-in;
+      display: none;
+      z-index: 1;
+
+      @include breakpoint(ipad) {
+        top: 9.375rem;
+      }
+
+      li {
+        width: 100%;
+        height: 5rem;
+        animation: navAnime 300ms linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+        &:nth-child(2) {
+          animation-delay: 200ms;
+        }
+        &:nth-child(3) {
+          animation-delay: 300ms;
+        }
+        @include breakpoint(laptop) {
+          animation: none;
+        }
+        a {
+          font-size: 1.2rem;
+          background-color: $lightBlue;
+          color: $secondColor;
+          width: 100%;
+          height: 100%;
+
+          display: grid;
+          place-items: center;
+          transition: 300ms ease-in;
+
+          &:not(:last-child) {
+            margin-right: 32px;
+          }
+          &:hover {
+            background-color: $primary;
+            color: $lightGreen;
+          }
+        }
+      }
+      @include breakpoint(laptop) {
+        display: none;
+      }
+    }
+
+    button {
+      display: inline-block;
+      background: transparent;
+      border: none;
+      font-size: 1.3rem;
+      color: $secondColor;
+      cursor: pointer;
+
+      @include breakpoint(ipad) {
+        font-size: 1.6rem;
+      }
+
+      @include breakpoint(laptop) {
+        display: none;
+      }
+    }
+
+    #close-btn-menu {
+      display: none;
+    }
+
+    @keyframes navAnime {
+      0% {
+        transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+      }
+
+      100% {
+        transform: rotateZ(0) rotateX(0) scale(1);
+        opacity: 1;
+      }
+    }
+  }
+}

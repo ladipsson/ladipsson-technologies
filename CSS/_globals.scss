@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: $primary;
+}
+
+a,
+a:hover a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}

@@ -1,0 +1,145 @@
+.services {
+  background-color: $secondColor;
+  width: $fullWidth;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  
+
+  .service-head {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: $lightGreen;
+    padding-bottom: 1.2rem;
+    @include breakpoint(laptop) {
+      font-size: 2rem;
+    }
+  }
+  .service-details {
+    width: $medium;
+
+    @include breakpoint(ipad) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: $large;
+      column-gap: 1.8rem;
+    }
+    @include breakpoint(laptop) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .my-service {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+
+      .services-img {
+        width: 200px;
+        border: 2px solid $lightGreen;
+        border-radius: 5px;
+        margin: 0 auto;
+      }
+      .desc {
+        text-align: center;
+        margin: 0 auto;
+        color: $primary;
+        line-height: 1.5;
+        .desc-heading {
+          font-size: 1.2rem;
+          padding-top: 0.5rem;
+        }
+        .desc-text {
+          font-size: 0.8rem;
+          padding-bottom: 1rem;
+
+          @include breakpoint(ipad) {
+            width: 60%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+// TESTIMONIALS
+.testimonials {
+  background-color: $ashColor;
+  padding: 2rem 0;
+  text-align: center;
+  line-height: 1.5;
+
+  @include breakpoint(laptop) {
+    width: 100vw;
+  }
+  .content {
+    width: $small;
+    margin: 0 auto;
+
+    .quote {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: $primary;
+      padding-bottom: 1rem;
+    }
+    .quote::before,
+    .quote::after {
+      content: '"';
+      font-size: 1rem;
+      color: black;
+    }
+  }
+}
+
+//CTA SECTION
+.main-cta {
+  background-color: $secondColor;
+  padding: 2rem 0;
+  @include breakpoint(laptop) {
+    width: 100vw;
+  }
+  .inner-cta {
+    background-color: $lightBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 1.5rem;
+    width: $large;
+    margin: 0 auto;
+    border-radius: 8px;
+    text-align: center;
+    color: $aliceBlue;
+
+    @include breakpoint(laptop) {
+      flex-direction: row;
+      width: $medium
+    }
+
+    .main-ctatext {
+      padding-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      .support-text {
+        font-weight: 500;
+      }
+    }
+    .signup {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: $primary;
+      background-color: $lightGreen;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      transition: all 300ms ease;
+    }
+    .signup:hover {
+      background-color: transparent;
+      border: 2px solid $primary;
+      color: red;
+    }
+  }
+}
