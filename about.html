@@ -8,89 +8,109 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Satisfy&family=Ubuntu:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Overpass:wght@300;600&family=Pacifico&family=Satisfy&family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <!-- FONT AWSOME ICONS -->
-    <script src="https://kit.fontawesome.com/799f5e50bc.js" crossorigin="anonymous"></script>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
     <!-- CSS STYLE -->
-    <link rel="stylesheet" href="CSS/about.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
     <title>About Ladipsson Technologies</title>
   </head>
   <body>
     <header>
       <!-- NAV BAR -->
-      <nav class="nav-bar">
+      <nav class="menu-bar">
         <div class="logo">
-          <p>
-            Ladipsson <br />
-            Technologies
-          </p>
+          <a href="index.html"
+            ><span class="first-letter">La</span>dipsson <br />
+            Technologies</a
+          >
         </div>
-        <div class="nav-list">
-          <ul class="list-items">
-            <li class="pages"><a href="index.html">Home</a></li>
-            <li class="pages"><a href="about.html">About Us</a></li>
-            <li class="pages"><a href="contact.html">Contact</a></li>
-          </ul>
+
+        <div class="nav_menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
         </div>
+
+        <ul class="header_menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="open-btn-menu"><i class="fa-solid fa-bars"></i></button>
+        <button id="close-btn-menu"><i class="fa-solid fa-xmark"></i></button>
       </nav>
 
-      <div class="who-we-are">
-        <div class="who-we-head">
-          <h1 class="whowe-head">Who we are</h1>
+      <section class="who-we-are">
+        <div class="container">
+          <div class="who-we-head">
+            <h1 class="whowe-head">Who we are</h1>
+          </div>
+          <div class="who-we-main-text">
+            <p class="whowe-main-text">
+              A-list website designers based in Lagos with focus on delivering
+              best quality web design projects in Lagos, that is result oriented
+              and customer satisfaction guaranteed.
+            </p>
+          </div>
         </div>
-        <div class="who-we-main-text">
-          <p class="whowe-main-text">
-            A-list website designers based in Lagos with focus on delivering
-            best quality web design projects in Lagos, that is result oriented
-            and customer satisfaction guaranteed.
-          </p>
-        </div>
-      </div>
+      </section>
     </header>
 
     <main class="main-section">
-      <div class="link-list">
-        <ul class="list">
-          <li class="in-page-links"><a href="">Who we are</a></li>
-          <li class="in-page-links"><a href="">Our Team</a></li>
-          <li class="in-page-links"><a href="">Our Clients</a></li>
-          <li class="in-page-links">
-            <a href="">Frequently Asked Questions</a>
-          </li>
-          <li class="in-page-links"><a href="">Client reviews</a></li>
-        </ul>
-      </div>
-      <div class="our-history">
-        <h1 class="history-head">Our History</h1>
-        <p class="history-body">
-          Ladipsson Technologies - started operation from Lagos, Nigeria in 2022
-          but was registered with CAC in 2021. The company started with web
-          designing and graphic design as the major service before going into
-          other services like Mobile APP development, UI/UX design, Custom
-          CRM/Software development, and SEO services. The agency is a child idea
-          of Mr. Shadrach Arowolo, shortly after completing his Web Development
-          Trainings, borne out of a passion for designing and coding, Shadrach
-          started Ladipsson Technologies from the comfort of his one-room
-          apartment before going commercial.
-        </p>
+      <div class="contain">
+        <div class="link-list">
+          <ul class="list">
+            <li class="in-page-links"><a href="">Who we are</a></li>
+            <li class="in-page-links"><a href="">Our Team</a></li>
+            <li class="in-page-links"><a href="">Our Clients</a></li>
+            <li class="in-page-links">
+              <a href="">Frequently Asked Questions</a>
+            </li>
+            <li class="in-page-links"><a href="">Client reviews</a></li>
+          </ul>
+        </div>
+        <div class="our-history">
+          <h1 class="history-head">Our History</h1>
+          <p class="history-body">
+            Ladipsson Technologies - started operation from Lagos, Nigeria in
+            2022 but was registered with CAC in 2021. The company started with
+            web designing and graphic design as the major service before going
+            into other services like Mobile APP development, UI/UX design,
+            Custom CRM/Software development, and SEO services. The agency is a
+            child idea of Mr. Shadrach Arowolo, shortly after completing his Web
+            Development Trainings, borne out of a passion for designing and
+            coding, Shadrach started Ladipsson Technologies from the comfort of
+            his one-room apartment before going commercial.
+          </p>
+        </div>
       </div>
     </main>
     <section class="mission-vision">
       <div class="our-vision">
-        <h2 class="vision-mission-head">Our Vision</h2>
-        <p class="mission-vision-statement">
-          To create value-added software solutions to our clients worldwide
-        </p>
+        <img src="images/vision.png" alt="" class="icon-img" />
+        <div class="vision-container">
+          <h2 class="vision-mission-head">Our Vision</h2>
+          <p class="mission-vision-statement">
+            To create value-added software solutions to our clients worldwide
+          </p>
+        </div>
       </div>
       <div class="our-mission">
-        <h2 class="vision-mission-head">Our Mission</h2>
-        <p class="mission-vision-statement">
-          To create standard software application and creative designs that is
-          modern and functional.
-        </p>
+        <img src="images/mission.png" alt="" class="icon-img" />
+        <div class="mission-container">
+          <h2 class="vision-mission-head">Our Mission</h2>
+          <p class="mission-vision-statement">
+            To create standard software application and creative designs that is
+            modern and functional.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -98,10 +118,27 @@
     <div class="quick-links">
       <div class="office-details">
         <h3 class="office-details-head">Our Office</h3>
-        <p>78, Church Street, Magodo-isheri, Lagos State</p>
-        <p>info@ladipssontechnologies.com</p>
-        <p>+234-906-8253382</p>
-        <p>+234-811-2830281</p>
+        <p>
+          <span style="padding-right: 0.4rem"
+            ><i class="fa-solid fa-location-dot"></i
+          ></span>
+          78, Church Street, Magodo-isheri, Lagos State
+        </p>
+        <p>
+          <span style="padding-right: 0.4rem"
+            ><i class="fa-solid fa-envelope"></i></span
+          >info@ladipssontechnologies.com
+        </p>
+        <p>
+          <span style="padding-right: 0.4rem"
+            ><i class="fa-solid fa-location-dot"></i></span
+          >+234-906-8253382
+        </p>
+        <p>
+          <span style="padding-right: 0.4rem"
+            ><i class="fa-solid fa-location-dot"></i></span
+          >+234-811-2830281
+        </p>
       </div>
 
       <div class="company-details">
@@ -111,7 +148,9 @@
           <li class="company-quicklinks"><a href="">About</a></li>
           <li class="company-quicklinks"><a href="">Our Team</a></li>
           <li class="company-quicklinks"><a href="">Our Clients</a></li>
-          <li class="company-quicklinks"><a href="">Web DEsign Portfolia</a></li>
+          <li class="company-quicklinks">
+            <a href="">Web DEsign Portfolia</a>
+          </li>
           <li class="company-quicklinks"><a href="">Contact Us</a></li>
         </ul>
       </div>
@@ -131,9 +170,16 @@
 
       <div class="lets-discuss">
         <h3 class="discus-head">Let's Discuss The Next Step</h3>
-        <p class="discuss-main-text">Have a project or a question? <br>We'd love to hear from you.</p>
+        <p class="discuss-main-text">
+          Have a project or a question? <br />We'd love to hear from you.
+        </p>
         <p class="request-quote"><a href="">Request a quote</a></p>
       </div>
     </div>
+    <footer>
+      <p class="copyright">Copyright @ Ladipsson 2022</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
