@@ -1,0 +1,130 @@
+//About page main section
+
+.main-section {
+  background-color: $secondColor;
+  .contain {
+    padding: 2.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    margin: 0 auto;
+    @include breakpoint(ipad-promax) {
+      width: 85vw;
+      grid-template-columns: 30% 70%;
+      column-gap: 2rem;
+    }
+  }
+
+  .link-list {
+    background-color: $lightGreen;
+    width: 100%;
+    .in-page-links {
+      padding: 1rem;
+      cursor: pointer;
+      transition: all 400ms ease-in;
+      a {
+        color: $secondColor;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      &:not(last-child) {
+        border-bottom: 1px solid $secondColor;
+      }
+
+      &:hover {
+        background-color: $primary;
+      }
+    }
+    @include breakpoint(ipad-promax) {
+      .in-page-links {
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .our-history {
+    padding-top: 2.5rem;
+    @include breakpoint(ipad-promax) {
+      padding: 0;
+    }
+    .history-head {
+      font-family: $secondText;
+      font-size: 3rem;
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 1rem;
+      color: $primary;
+      @include breakpoint(ipad-promax) {
+        text-align: left;
+        padding-bottom: 0.7rem;
+      }
+    }
+    .history-body {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: center;
+      color: $primary;
+      @include breakpoint(ipad-promax) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.mission-vision {
+  background-color: $ashColor;
+  // padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+
+  @include breakpoint(ipad-pro) {
+    flex-direction: row;
+  }
+
+  .icon-img {
+    width: 110px;
+  }
+
+  .our-vision,
+  .our-mission {
+    padding: 2rem;
+    margin-top: 1.4rem;
+    border-bottom: 1px solid $primary;
+    width: 100%;
+
+    @include breakpoint(ipad-pro) {
+      padding-bottom: 1.4rem;
+    }
+    @include breakpoint(ipad-promax) {
+      border-bottom: none;
+    }
+  }
+
+  .our-vision {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .vision-mission-head,
+  .vision-mission-head {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: $secondText;
+    line-height: 1.8;
+    color: $primary;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 1.1rem;
+    color: $primary;
+  }
+}
