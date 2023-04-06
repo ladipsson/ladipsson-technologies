@@ -10,7 +10,7 @@
     text-align: center;
     font-size: 1.8rem;
     font-weight: 900;
-    color: $lightGreen;
+    color: $primary;
     padding-bottom: 1.2rem;
     @include breakpoint(laptop) {
       font-size: 2rem;
@@ -36,7 +36,7 @@
 
       .services-img {
         width: 200px;
-        border: 2px solid $lightGreen;
+        border: 2px solid $heroBackground;
         border-radius: 5px;
         margin: 0 auto;
       }
@@ -67,7 +67,7 @@
 
 // TESTIMONIALS
 .testimonials {
-  background-color: $ashColor;
+  background-color: $heroBackground;
   padding: 2rem 0;
   text-align: center;
   line-height: 1.5;
@@ -82,7 +82,7 @@
     .quote {
       font-size: 1.2rem;
       font-weight: 500;
-      color: $primary;
+      color: white;
       padding-bottom: 1rem;
     }
     .quote::before,
@@ -96,13 +96,14 @@
 
 //CTA SECTION
 .main-cta {
-  background-color: $secondColor;
+  background-color: $heroBackground;
   padding: 2rem 0;
   @include breakpoint(laptop) {
     width: 100vw;
   }
   .inner-cta {
-    background-color: $lightBlue;
+    border-color: $primary;
+    // background-color: $lightBlue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,9 +112,10 @@
     padding: 2rem 1.5rem;
     width: $large;
     margin: 0 auto;
-    border-radius: 8px;
+    // border-radius: 8px;
     text-align: center;
-    color: $aliceBlue;
+    font-size: 1.5rem;
+    // color: $aliceBlue;
 
     @include breakpoint(laptop) {
       flex-direction: row;
@@ -122,7 +124,7 @@
 
     .main-ctatext {
       padding-bottom: 1rem;
-      font-size: 1.1rem;
+      font-size: 1.5rem;
       font-weight: 500;
       .support-text {
         font-weight: 500;
